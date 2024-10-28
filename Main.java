@@ -1,20 +1,19 @@
-public class Main {
-    public static void main(String[] args){
-        // Create variables for first/last name, address, city, zip code for our fictional character
-        String firstName = "John";
-        String lastName = "Doe";
-        String address = "456 Elm Street";
-        String city = "Denver";
-        String zipCode = "12345";
+import java.util.HashMap;
+import java.util.Map;
 
-        // print each variable for the fictional character on a new line
-        System.out.println(
-                "Here is the information for the fictional character\n" +
-                "First Name: " + firstName + "\n" +
-                "Last Name: " + lastName + "\n" +
-                "Address: " + address + "\n" +
-                "City: " + city + "\n" +
-                "Zip Code: " + zipCode
-        );
+public class Main {
+    public static void main(String[] args) {
+        TaxWithholding taxWithholding = new TaxWithholding();
+
+        taxWithholding.calcWeeklyTaxWithholding(300);
+        taxWithholding.calcWeeklyTaxWithholding(1333);
+        taxWithholding.calcWeeklyTaxWithholding(1700);
+        taxWithholding.calcWeeklyTaxWithholding(3442);
+        taxWithholding.calcWeeklyTaxWithholding(500);
+        taxWithholding.calcWeeklyTaxWithholding(1500);
+        taxWithholding.calcWeeklyTaxWithholding(2500);
+        taxWithholding.calcWeeklyTaxWithholding(1);
     }
 }
+
+
