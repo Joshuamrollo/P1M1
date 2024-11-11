@@ -16,10 +16,10 @@ public class CalcAvgTemp {
         for(int i=0; i<7; i++){
             // get day
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Enter a day of the week or enter 'Week'/input 7 days of data to see your temperature data: ");
+            System.out.print("Enter a day of the week or enter 'week'/input 7 days of data to see your temperature data: ");
             String userInputForDay = scanner.nextLine();
 
-            if(Objects.equals(userInputForDay, "Week")) {
+            if(Objects.equals(userInputForDay, "week")) {
                 break;
             }
 
